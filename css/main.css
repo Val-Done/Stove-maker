@@ -31,19 +31,20 @@
 
 /* .container-wide {
   width: 1536px;
-}
-
+} */
 
 .btn {
   display: inline-block;
-  background-color: #01996d;
-  color: #fff;
-  font-weight: 400;
-  font-family: Lato;
-  line-height: 25px;
-  min-height: 65px;
-  border-radius: 4px;
+  background-color: #eb5c0f;
+  padding: 13px 38px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .no-scroll {
   overflow: hidden;
-} */
+}
