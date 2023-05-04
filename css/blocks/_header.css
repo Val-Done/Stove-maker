@@ -5,21 +5,26 @@
   min-height: 100vh;
 }
 
-.header__top {
-}
+
 .nav {
-  padding: 23px 135px 28px;
+  padding: 23px 0px 28px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #ffffff;
 }
 .nav__log {
+  margin-right: 55px;
 }
 .nav__list {
   display: flex;
   justify-content: space-between;
 }
-.nav__item {
+.nav__list a:hover {
+  color: #eb5c0f;
+}
+
+.nav__list li + li {
+  margin-left: 55px;
 }
 .nav__link {
   font-family: "Montserrat";
@@ -31,4 +36,15 @@
   text-decoration: none;
 }
 .nav__phone {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  color: #eb5c0f;
+  margin-left: auto;
+  /* margin-left: 45px; */
+}
+.nav__phone:hover {
+  color: #ffffff;
 }
