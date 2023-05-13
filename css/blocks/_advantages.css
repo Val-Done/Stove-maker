@@ -1,0 +1,38 @@
+.advantages {
+  margin-top: 150px;  
+}
+
+.advantages__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 41px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #242424;
+}
+.advantages__content {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.advantages__text {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 25px;
+text-transform: uppercase;
+
+}
+.advantages__text li +* {
+  margin-top: 45px;
+}
+.advantages__img,
+img {
+  max-width: 274px;
+  max-height: 461px;
+}

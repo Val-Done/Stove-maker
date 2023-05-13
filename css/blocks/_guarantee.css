@@ -1,0 +1,55 @@
+.guarantee {
+  margin-top: 150px;
+}
+
+.guarantee__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 41px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #242424;
+}
+.guarantee__wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.guarantee__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 290px;
+  max-height: 247px;
+  align-items: center;
+  
+}
+.card__img {
+  max-width: 114px;
+  max-height: 114px;
+}
+.card__title {
+  margin-top: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 41px;
+  text-align: center;
+  
+  color: #242424;
+}
+.card__text {
+  padding: 0px 10px;
+  margin-top: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #242424;
+}
