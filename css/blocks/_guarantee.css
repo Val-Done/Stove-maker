@@ -1,5 +1,5 @@
 .guarantee {
-  margin-top: 150px;
+  margin: 150px 0 64px;
 }
 
 .guarantee__title {
@@ -25,7 +25,6 @@
   max-width: 290px;
   max-height: 247px;
   align-items: center;
-  
 }
 .card__img {
   max-width: 114px;
@@ -39,7 +38,7 @@
   font-size: 25px;
   line-height: 41px;
   text-align: center;
-  
+
   color: #242424;
 }
 .card__text {

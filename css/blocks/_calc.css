@@ -1,0 +1,116 @@
+.calculation {
+  padding: 60px 0;
+  background-color: #242424;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 41px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.calc_form {
+  max-width: 965px;
+  max-height: 100%;
+}
+.calc:focus {
+	
+	background-color:#EB5C0F;
+  
+	
+}
+
+.descr {
+  margin: 15px 0 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.calc {
+  background-color: #242424;
+  color: white;
+  border: 0.5px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 270px;
+  height: 40px;
+}
+.calc_dlina {
+  margin-right: 70px;
+}
+.calc_dlina::after {
+}
+
+.calc_shir {
+  margin-right: 70px;
+}
+.calc_visota {
+}
+.result_calc {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.div_res {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 270px;
+}
+.div_res-first {
+  margin-top: 40px;
+}
+.div_res + * {
+  margin-top: 40px;
+}
+.div_res-last {
+  margin-right: 346px;
+}
+.opis_res {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.input_res {
+  background-color: #242424;
+  color: white;
+  border: 0.5px solid #ffffff;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+}
+.kirp {
+  max-width: 99px;
+  max-height: 38px;
+}
+.mosh_k {
+}
+.mosh_v {
+}
+.plosh {
+}
+.massa {
+}
+.calc_submit {
+}
+.desc_calc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.53);
+}

@@ -94,6 +94,140 @@
       </div>
     </div>
   </section>
+  <section class="calculation">
+    <div class="container">
+      <header class="title">Получите расчёт </header>
+
+      <div class="calc_form">
+        <div class="descr">Расчет параметров отопительной печи прямоугольной формы</div>
+        <select class="calc_dlina calc">
+          <option value="" selected>Длина</option>
+          <option value="0.38">38 см 1.5 кирпича</option>
+          <option value="0.51">51 см 2 кирпича</option>
+          <option value="0.64">64 см 2,5 кирпича</option>
+          <option value="0.77">77 см 3 кирпича</option>
+          <option value="0.89">89 см 3,5 кирпича</option>
+          <option value="1.02">102 см 4 кирпича</option>
+          <option value="1.15">115 см 4,5 кирпича</option>
+          <option value="1.27">127 см 5 кирпичей</option>
+          <option value="1.4">140 см 5,5 кирпичей</option>
+          <option value="1.53">153 см 6 кирпичей</option>
+          <option value="1.66">166 см 6,5 кирпичей</option>
+          <option value="1.79">179 см 7 кирпичей</option>
+        </select>
+        <select class="calc_shir calc">
+          <option value="" selected>Ширина</option>
+          <option value="0.38">38 см 1.5 кирпича</option>
+          <option value="0.51">51 см 2 кирпича</option>
+          <option value="0.64">64 см 2,5 кирпича</option>
+          <option value="0.77">77 см 3 кирпича</option>
+          <option value="0.89">89 см 3,5 кирпича</option>
+          <option value="1.02">102 см 4 кирпича</option>
+          <option value="1.15">115 см 4,5 кирпича</option>
+          <option value="1.27">127 см 5 кирпичей</option>
+          <option value="1.4">140 см 5,5 кирпичей</option>
+          <option value="1.53">153 см 6 кирпичей</option>
+          <option value="1.66">166 см 6,5 кирпичей</option>
+          <option value="1.79">179 см 7 кирпичей</option>
+        </select>
+        <select class="calc_visota calc">
+          <option value="" selected>Высота</option>
+          <option value="0.56">56 см 8 рядов</option>
+          <option value="0.63">63 см 9 рядов</option>
+          <option value="0.7">70 см 10 рядов</option>
+          <option value="0.77">77 см 11 рядов</option>
+          <option value="0.84">84 см 12 рядов</option>
+          <option value="0.91">91 см 13 рядов</option>
+          <option value="0.98">98 см 14 рядов</option>
+          <option value="1.05">105 см 15 рядов</option>
+          <option value="1.12">112 см 16 рядов</option>
+          <option value="1.19">119 см 17 рядов</option>
+          <option value="1.26">126 см 18 рядов</option>
+          <option value="1.33">133 см 19 рядов</option>
+          <option value="1.4">140 см 20 рядов</option>
+          <option value="1.47">147 см 21 рядов</option>
+          <option value="1.54">154 см 22 рядов</option>
+          <option value="1.61">161 см 23 рядов</option>
+          <option value="1.68">168 см 24 рядов</option>
+          <option value="1.75">175 см 25 рядов</option>
+          <option value="1.82">182 см 26 рядов</option>
+          <option value="1.89">189 см 27 рядов</option>
+          <option value="1.96">196 см 28 рядов</option>
+          <option value="2.03">203 см 29 рядов</option>
+          <option value="2.1">210 см 30 рядов</option>
+          <option value="2.17">217 см 31 рядов</option>
+          <option value="2.24">224 см 32 рядов</option>
+          <option value="2.31">231 см 33 рядов</option>
+          <option value="2.38">238 см 34 рядов</option>
+          <option value="2.45">245 см 35 рядов</option>
+        </select>
+
+        <div class="result_calc">
+          <div class="div_res div_res-first">
+            <p class="opis_res">Количество кирпича, шт.</p>
+            <input type="text" class="input_res kirp">
+          </div>
+          <div class="div_res">
+            <p class="opis_res">Мощность, ккал/ч</p>
+            <input type="text" class="input_res mosh_k">
+          </div>
+          <div class="div_res">
+            <p class="opis_res">Мощность, Вт/ч</p>
+            <input type="text" class="input_res mosh_v">
+          </div>
+          <div class="div_res">
+            <p class="opis_res">S отапливаемого помещения, м2</p>
+            <input type="text" class="input_res plosh">
+          </div>
+          <div class="div_res div_res-last">
+            <p class="opis_res">Масса печи с раствором, кг.</p>
+            <input type="text" class="input_res massa">
+          </div>
+        </div>
+        <input style="visibility: hidden; height:0" type="submit" id="calc_submit" name="calc_submit"
+          class="calc_submit" value="Посчитать">
+        <p class="desc_calc">* “S” - площадь, “М” - масса</p>
+        <p class="desc_calc">*Мощность печи рассчитывается при однократной топке (средняя величина за сутки)</p>
+        <p class="desc_calc">*Расчёт площади отапливаемого помещения производится для дома из деревянного сруба со
+          стеклопакетами в условиях Минска</p>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+
+          $(".calc_dlina, .calc_shir, .calc_visota").change(function () {
+            if ($(".calc_dlina").val() != '' && $(".calc_shir").val() != '' && $(".calc_visota").val() != '') {
+
+              function round(value, decimals) {
+                return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
+              }
+
+              var dlina = $('.calc_dlina').val();
+              var shir = $('.calc_shir').val();
+              var visota = $('.calc_visota').val();
+
+              kirp = round(dlina * shir * visota * 318, 0); // add round
+              mosh = round((((dlina * 1 + shir * 1) * 2 * visota) + (dlina * shir)) * 300, 2);
+              moshv = round((mosh * 1.163), 1);
+              plosh = round((mosh / 50), 1);
+              massa = round(kirp * 1.2 * 4, 2);
+
+              $('.kirp').empty().val(kirp);
+              $('.mosh_k').empty().val(mosh);
+              $('.mosh_v').empty().val(moshv);
+              $('.plosh').empty().val(plosh);
+              $('.massa').empty().val(massa);
+
+            }
+          })
+
+        });
+      </script>
+
+    </div>
+
+  </section>
+  <!-- <script src="./js/main.js"></script> -->
 
 </body>
 
