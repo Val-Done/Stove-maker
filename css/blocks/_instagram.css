@@ -1,5 +1,5 @@
 .instagram {
-  padding: 150px 135px;
+  padding: 0px 135px;
 }
 .container {
 }
@@ -25,4 +25,21 @@
   max-width: 370px;
   max-height: 370px;
   object-fit: cover;
+}
+.btn__wrapper {
+  position: relative;
+}
+.insta__btn {
+  margin-top: 40px ;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate( 50% 0 );
+  -webkit-transform: translate( 50% 0 );
+  -moz-transform: translate( 50% 0 );
+  -ms-transform: translate( 50% 0 );
+  -o-transform: translate( 50% 0 );
+}
+.insta__btn-link {
+  color: #ffffff;
 }
