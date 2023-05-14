@@ -1,0 +1,40 @@
+.about {
+  padding: 150px 135px;
+  
+}
+
+.about__row {
+  display: flex;
+  justify-content: space-between;
+}
+.about__title {
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 41px;
+  text-align: center;
+  text-transform: uppercase;  
+  color: #242424;
+  margin-bottom: 60px;
+  
+}
+.about__text {
+  max-width: 510px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+
+
+color: #242424;
+
+}
+.about__img {
+  
+  max-width: 508px;
+  height: 100%;
+  object-fit: cover;
+}
