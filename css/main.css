@@ -5,6 +5,7 @@
 @import "./blocks/_about.css";
 @import "./blocks/_instagram.css";
 @import "./blocks/_service.css";
+@import "./blocks/_footer.css";
 
 
 .body {
@@ -51,6 +52,10 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
+}
+.btn:hover {
+  background-color: rgba(235, 92, 15, 0.479);
+  transition: color 0.2s ease;
 }
 .no-scroll {
   overflow: hidden;
