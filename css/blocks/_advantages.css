@@ -1,6 +1,5 @@
 .advantages {
-  
-  margin-top: 150px;  
+  margin-top: 150px;
 }
 
 .advantages__title {
@@ -11,7 +10,7 @@
   line-height: 41px;
   text-align: center;
   text-transform: uppercase;
-  
+
   color: #242424;
 }
 .advantages__content {
@@ -21,15 +20,17 @@
   align-items: center;
 }
 .advantages__text {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 25px;
-text-transform: uppercase;
-
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
-.advantages__text li +* {
+.advantages__color {
+  color: #eb5c0f;
+}
+.advantages__text li + * {
   margin-top: 45px;
 }
 .advantages__img,

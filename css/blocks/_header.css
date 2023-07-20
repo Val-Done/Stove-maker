@@ -79,6 +79,9 @@
   line-height: 30px;
   color: #ffffff;
 }
+.header__btn-wrapper {
+  position: relative;
+}
 .header__btn {
   margin-top: 30px;
 }

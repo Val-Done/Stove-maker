@@ -7,12 +7,10 @@
 @import "./blocks/_service.css";
 @import "./blocks/_footer.css";
 
-
 .body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  
 }
 .none {
   display: none !important;
@@ -40,7 +38,6 @@
 /* .container-wide {
   width: 1536px;
 } */
-
 .btn {
   display: inline-block;
   background-color: #eb5c0f;
@@ -53,9 +50,11 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .btn:hover {
   background-color: rgba(235, 92, 15, 0.479);
   transition: color 0.2s ease;
+  border: 1px solid wheat;
 }
 .no-scroll {
   overflow: hidden;

@@ -30,15 +30,18 @@
   position: relative;
 }
 .insta__btn {
-  margin-top: 40px ;
+  margin-top: 40px;
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate( 50% 0 );
-  -webkit-transform: translate( 50% 0 );
-  -moz-transform: translate( 50% 0 );
-  -ms-transform: translate( 50% 0 );
-  -o-transform: translate( 50% 0 );
+  transform: translate(50% 0);
+  -webkit-transform: translate(50% 0);
+  -moz-transform: translate(50% 0);
+  -ms-transform: translate(50% 0);
+  -o-transform: translate(50% 0);
+}
+.insta__btn:hover {
+  border: 1px solid black !important;
 }
 .insta__btn-link {
   color: #ffffff;
