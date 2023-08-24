@@ -22,9 +22,14 @@
 .insta__link {
 }
 .insta__img {
+  /* border-radius: 5px; */
   max-width: 370px;
   max-height: 370px;
   object-fit: cover;
+  /* -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; */
 }
 .btn__wrapper {
   position: relative;

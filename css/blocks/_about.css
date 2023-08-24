@@ -6,6 +6,7 @@
 .about__row {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .about__title {
   
@@ -37,4 +38,11 @@ color: #242424;
   max-width: 508px;
   height: 100%;
   object-fit: cover;
+  max-width: 100%;
+  
+  clip-path: circle(42%);
+  position: absolute;
+  top: -37px;
+  right: 114px;
+  overflow: hidden;
 }

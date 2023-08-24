@@ -52,3 +52,31 @@
 
   color: #242424;
 }
+
+/* Adaptive */
+@media (max-width: 768px){
+  .guarantee__wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.guarantee__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 290px;
+    padding-bottom: 50px;
+  align-items: center;
+}
+.card__text {
+  text-align: center;
+  
+}
+}
+
+/* @media (max-width: 430px){}
+
+@media (max-width: 375px){} */

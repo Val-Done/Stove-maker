@@ -17,11 +17,12 @@
   max-width: 965px;
   max-height: 100%;
 }
-.calc:hover {
-	
-	background-color:#EB5C0F;
+.calc_form select {
+  padding-right: 20px;
   
-	
+}
+.calc:hover {
+  background-color: #eb5c0f;
 }
 
 .descr {
@@ -42,6 +43,7 @@
   cursor: pointer;
   width: 270px;
   height: 40px;
+  padding-left: 10px;
 }
 .calc_dlina {
   margin-right: 70px;
@@ -114,5 +116,3 @@
   line-height: 30px;
   color: rgba(255, 255, 255, 0.53);
 }
-
-
