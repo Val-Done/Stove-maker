@@ -1,4 +1,4 @@
-/* @import "./blocks/_header.css"; */
+@import "./blocks/_header.css";
 /* @import "/Stove-maker/blocks/_header.css"; */
 
 @import "./blocks/_advantages.css";
@@ -70,6 +70,7 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
 
 /* Header */
 .header {
