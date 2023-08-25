@@ -1,4 +1,4 @@
-/* @import "/blocks/_header.css"; */
+@import "./blocks/_header.css";
 @import "./blocks/_advantages.css";
 @import "./blocks/_guarantee.css";
 @import "./blocks/_calc.css";
@@ -6,7 +6,6 @@
 @import "./blocks/_instagram.css";
 @import "./blocks/_service.css";
 @import "./blocks/_footer.css";
-
 
 .body {
   font-family: "Montserrat", sans-serif;
