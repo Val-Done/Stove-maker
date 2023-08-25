@@ -14,19 +14,21 @@
   color: #ffffff;
 }
 .calc_form {
-  max-width: 965px;
+  max-width: 1200px;
   max-height: 100%;
 }
+/* .calc  {
+  margin-left: 90px;
+} */
 .calc_form select {
   padding-right: 20px;
-  
 }
 .calc:hover {
   background-color: #eb5c0f;
 }
 
 .descr {
-  margin: 15px 0 50px;
+  margin: 15px 0 50px 25px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -43,19 +45,18 @@
   cursor: pointer;
   width: 270px;
   height: 40px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .calc_dlina {
-  margin-right: 70px;
+  margin-right: 190px;
 }
 .calc_dlina::after {
 }
 
 .calc_shir {
-  margin-right: 70px;
+  margin-right: 190px;
 }
-.calc_visota {
-}
+
 .result_calc {
   margin-bottom: 50px;
   display: flex;
@@ -98,16 +99,7 @@
   max-width: 99px;
   max-height: 38px;
 }
-.mosh_k {
-}
-.mosh_v {
-}
-.plosh {
-}
-.massa {
-}
-.calc_submit {
-}
+
 .desc_calc {
   font-family: "Montserrat";
   font-style: normal;
@@ -115,4 +107,107 @@
   font-size: 16px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.53);
+}
+
+/** Adaptive **/
+
+@media (max-width: 768px) {
+  .calculation {
+    padding: 60px 11px;
+  }
+  .calc {
+    width: 170px;
+  }
+  .calc_dlina {
+    margin: 0 70px 0 20px;
+  }
+  .calc_shir {
+    margin-right: 70px;
+  }
+  .result_calc {
+    margin: 0 38px 48px 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+  .descr {
+    margin: 15px 0 40px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .calc {
+    width: 350px;
+  }
+
+  .calc_shir {
+    margin: 15px 0 0 20px;
+  }
+  .calc_visota {
+    margin: 15px 0 0 20px;
+  }
+  .result_calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .input_res {
+    padding-left: 10px;
+    margin-left: 110px;
+  }
+  .kirp {
+  }
+  .mosh_k {
+    /* margin-left: 144px; */
+  }
+  .mosh_v {
+  }
+  .plosh {
+    /* margin-left: 103px; */
+  }
+  .massa {
+  }
+
+  .div_res {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 350px !important;
+  }
+  .div_res-last {
+    margin-right: 0;
+  }
+  .opis_res {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .calc {
+    width: 300px;
+  }
+  .input_res {
+    margin-left: 103px;
+    margin-left: 50px;
+  }
+  .div_res {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 300px !important;
+  }
+  /* .plosh {
+    margin-left: 67px;
+  } */
+  .input_res.kirp {
+    margin-left: 95px;
+  }
 }

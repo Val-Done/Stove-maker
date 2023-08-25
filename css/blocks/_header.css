@@ -164,10 +164,13 @@
 
   .container {
     overflow: hidden;
-    max-width: 760px;
+    /* max-width: 760px ; */
+  }
+  .nav__logo {
+    padding-left: 30px;
   }
   .header__content {
-    margin-left: 80px;
+    padding-left: 50px;
     margin-top: 100px;
   }
   .header__title {
@@ -204,7 +207,7 @@
   }
   .nav__link {
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -213,7 +216,7 @@
     display: block;
     margin: 33px 0px 0px 95px;
 
-    font-size: 20px;
+    font-size: 30px;
   }
   .nav--mobile {
     position: fixed;
@@ -252,7 +255,7 @@
   } */
   .header__content {
     margin-top: 50px;
-    margin-left: auto;
+    padding: 0 20px;
   }
   .header__title {
     font-size: 26px;
@@ -325,10 +328,9 @@
 
 @media (max-width: 375px) {
   .container {
-    max-width: 370px;
+    padding: 0 25px;
   }
   .header__title {
-    max-width: 370px;
     font-size: 25px;
     line-height: 50px;
   }
@@ -340,7 +342,7 @@
     margin-top: 25px;
   }
   .header__btn-wrapper {
-    margin: 20px 50px ;
+    margin: 20px 50px;
   }
   .btn {
     padding: 12px 25px !important;
