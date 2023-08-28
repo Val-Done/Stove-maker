@@ -965,6 +965,7 @@ img {
   -o-border-radius: 5px; */
 }
 .btn__wrapper {
+  
   position: relative;
 }
 .insta__btn {
@@ -1021,10 +1022,11 @@ img {
   }
 
   .insta__btn {
-    margin-top: 40px;
-    position: absolute;
-    bottom: 0;
-    right: 20%;
+    
+    margin: 40px 70px;
+    position: static;
+    /* bottom: 0;
+    right: 20%; */
     transform: translate(50% 0);
     -webkit-transform: translate(50% 0);
     -moz-transform: translate(50% 0);
@@ -1208,6 +1210,10 @@ img {
   font-size: 20px;
   color: #ffffff;
 }
+.footer__phone-link:hover{
+  color: #eb5c0f;
+
+}
 
 .footer__title-bottom {
   margin-bottom: 20px;
@@ -1241,6 +1247,9 @@ img {
 .insta__social-link {
   font-size: 20px;
   color: #ffffff;
+}
+.insta__social-link:hover{
+  color: #eb5c0f;
 }
 .val {
   margin-bottom: 20px;
