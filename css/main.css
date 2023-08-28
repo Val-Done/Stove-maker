@@ -1027,7 +1027,6 @@ img {
   .insta__btn {
     margin: 40px 100px;
     position: static;
-
     transform: translate(50% 0);
     -webkit-transform: translate(50% 0);
     -moz-transform: translate(50% 0);
@@ -1042,7 +1041,6 @@ img {
   .insta__btn {
     margin: 40px 70px;
     position: static;
-
     transform: translate(50% 0);
     -webkit-transform: translate(50% 0);
     -moz-transform: translate(50% 0);
