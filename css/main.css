@@ -965,7 +965,6 @@ img {
   -o-border-radius: 5px; */
 }
 .btn__wrapper {
-  
   position: relative;
 }
 .insta__btn {
@@ -1015,23 +1014,20 @@ img {
   .instagram {
     padding: 0px 28px;
   }
-}
-@media (max-width: 375px) {
-  .container {
-    padding: 0px 10px;
-  }
-
   .insta__btn {
-    
     margin: 40px 70px;
     position: static;
-    /* bottom: 0;
-    right: 20%; */
+
     transform: translate(50% 0);
     -webkit-transform: translate(50% 0);
     -moz-transform: translate(50% 0);
     -ms-transform: translate(50% 0);
     -o-transform: translate(50% 0);
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    padding: 0px 10px;
   }
 }
 
@@ -1210,9 +1206,8 @@ img {
   font-size: 20px;
   color: #ffffff;
 }
-.footer__phone-link:hover{
+.footer__phone-link:hover {
   color: #eb5c0f;
-
 }
 
 .footer__title-bottom {
@@ -1248,7 +1243,7 @@ img {
   font-size: 20px;
   color: #ffffff;
 }
-.insta__social-link:hover{
+.insta__social-link:hover {
   color: #eb5c0f;
 }
 .val {
