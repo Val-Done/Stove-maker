@@ -1040,7 +1040,7 @@ img {
 }
 @media (max-width: 375px) {
   .instagram {
-    padding: 0px 10px;
+    padding: 0px 13px;
   }
   .insta__btn {
     margin: 40px 70px;
@@ -1167,10 +1167,10 @@ img {
 }
 @media (max-width: 375px) {
   .service {
-    padding: 0 10px;
+    padding: 0 13px;
   }
   .service__box {
-    max-width: 350px;
+    max-width: 345px;
   }
   .box__text {
     padding: 0;
