@@ -262,8 +262,11 @@
   }
   .header__btn-wrapper {
     margin-top: 90px;
-    margin-left: 80px;
+    margin-left: 250px;
   }
+  /* .header__btn {
+    margin: 100px 250px;
+  } */
   .nav.nav--mobile .nav__list--mobile {
     margin-top: 100px;
     padding: 0;
@@ -345,8 +348,9 @@
     font-size: 20px;
   }
   .header__btn-wrapper {
-    margin-top: 40px;
+    margin: 40px 0 0 80px;
   }
+
   .nav.nav--mobile .nav__list--mobile {
     margin-right: auto;
     padding: 0;
@@ -1035,7 +1039,7 @@ img {
   }
 }
 @media (max-width: 375px) {
-  .container {
+  .instagram {
     padding: 0px 10px;
   }
   .insta__btn {
@@ -1139,7 +1143,7 @@ img {
   }
   .box__text {
     text-align: center;
-    margin: 0 80px 30px;
+    padding: 0 80px 30px;
   }
   .box__text-last {
     white-space: normal;
@@ -1153,14 +1157,31 @@ img {
     padding: 20px;
   }
   .service__title {
+    margin-bottom: 15px;
     font-size: 20px;
   }
   .box__text {
     font-size: 18px;
-    margin: 0 auto 15px;
+    padding: 0 13px 15px;
   }
 }
 @media (max-width: 375px) {
+  .service {
+    padding: 0 10px;
+  }
+  .service__box {
+    max-width: 350px;
+  }
+  .box__text {
+    padding: 0;
+    text-align: start;
+    font-size: 16px;
+  }
+  .box__subtitle {
+    font-size: 22px;
+    line-height: 15px;
+  }
+
   .box__text-last {
     white-space: pre-line;
   }
