@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Печник</title>
   <!-- reset -->
+  <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/main.css" />
 
@@ -20,7 +21,6 @@
   <link rel="mask-icon" href="img/Header/favicon/safari-pinned-tab.svg" color="#eb5c0f" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#eb5c0f" />
-  <script type="text/javascript" src="tpl/js/jquery-1.11.0.js?123"></script>
 
 </head>
 
@@ -63,6 +63,61 @@
 
     </div>
   </header>
+  <!-- <header class="header py-5">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="./img/Header/Logo.svg" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#advantages">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#guarantee">Гарантии</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#calculation">Расчёт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instagram">Галерея</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Контакты</a>
+            </li>
+          </ul>
+          <a class="nav-link" href="tel:+375447441447">+375447441447</a>
+        </div>
+      </nav>
+
+      <div class="text-center mt-5">
+        <h1 class="header__title">Традиционные & <span class="header__title-color">современные печи, </span>камины и
+          барбекю</h1>
+        <p class="header__text">Профессиональные печники. Высокое качество. Разумные сроки. Адекватные цены. Гарантии.
+          Помощь в подборе и доставки материалов.</p>
+      </div>
+
+      <div class="text-center mt-4">
+        <a class="btn btn-primary" href="tg://resolve?domain=@bezaval">связаться с нами</a>
+      </div>
+    </div>
+  </header> -->
+
+  <!-- Bootstrap CSS -->
+
+  <!-- Bootstrap JS -->
+
   <main>
     <section id="advantages" class="advantages">
       <div class="container">
@@ -361,40 +416,44 @@
     </div>
   </footer>
 
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $(".calc_dlina, .calc_shir, .calc_visota").change(function () {
-        if (
-          $(".calc_dlina").val() != "" &&
-          $(".calc_shir").val() != "" &&
-          $(".calc_visota").val() != ""
-        ) {
+    document.addEventListener("DOMContentLoaded", function () {
+      const dlinaInput = document.querySelector(".calc_dlina");
+      const shirInput = document.querySelector(".calc_shir");
+      const visotaInput = document.querySelector(".calc_visota");
+
+      function calculateValues() {
+        if (dlinaInput.value !== "" && shirInput.value !== "" && visotaInput.value !== "") {
+
           function round(value, decimals) {
             return Number(Math.round(value + "e" + decimals) + "e-" + decimals);
           }
 
-          var dlina = parseFloat($(".calc_dlina").val());
-          var shir = parseFloat($(".calc_shir").val());
-          var visota = parseFloat($(".calc_visota").val());
+          const dlina = parseFloat(dlinaInput.value);
+          const shir = parseFloat(shirInput.value);
+          const visota = parseFloat(visotaInput.value);
 
-          var kirp = round(dlina * shir * visota * 318, 0);
-          var mosh = round(((dlina * 1 + shir * 1) * 2 * visota + dlina * shir) * 300, 2);
-          var moshv = round(mosh * 1.163, 1);
-          var plosh = round(mosh / 50, 1);
-          var massa = round(kirp * 1.2 * 4, 2);
+          const kirp = round(dlina * shir * visota * 318, 0);
+          const mosh = round(((dlina * 1 + shir * 1) * 2 * visota + dlina * shir) * 300, 2);
+          const moshv = round(mosh * 1.163, 1);
+          const plosh = round(mosh / 50, 1);
+          const massa = round(kirp * 1.2 * 4, 2);
 
-          $(".kirp").val(kirp);
-          $(".mosh_k").val(mosh);
-          $(".mosh_v").val(moshv);
-          $(".plosh").val(plosh);
-          $(".massa").val(massa);
+          document.querySelector(".kirp").value = kirp;
+          document.querySelector(".mosh_k").value = mosh;
+          document.querySelector(".mosh_v").value = moshv;
+          document.querySelector(".plosh").value = plosh;
+          document.querySelector(".massa").value = massa;
         }
-      });
+      }
+
+      dlinaInput.addEventListener("change", calculateValues);
+      shirInput.addEventListener("change", calculateValues);
+      visotaInput.addEventListener("change", calculateValues);
     });
   </script>
   <script src="./js/main.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 

@@ -38,7 +38,7 @@
   object-fit: cover;
   max-width: 100%;
 
-  clip-path: circle(42%);
+  /* clip-path: circle(42%); */
   /* position: absolute;
   top: -37px;
   right: 114px;
